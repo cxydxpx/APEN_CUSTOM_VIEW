@@ -1,50 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#fefefe"
-    tools:context="com.example.apen.apencustomview.MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fefefe"
+                tools:context="com.example.apen.apencustomview.MainActivity">
 
-
-    <RelativeLayout
+    <com.example.apen.apencustomview.view.CurveView
+        android:id="@+id/curveView"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp">
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"/>
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="48dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="12dp"
-            android:background="@drawable/btn_bg"
-            android:text="搜索"
-            android:textColor="@color/text"
-            android:textSize="18sp" />
-
-        <!--android:textColor="@drawable/text_bg"-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="110dp"
-            android:background="@drawable/et_bg" />
-
-
-    </RelativeLayout>
-
-
-    <com.example.apen.apencustomview.view.CircleView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true" />
-
-
-    <ImageView
-        android:id="@+id/iv"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>
