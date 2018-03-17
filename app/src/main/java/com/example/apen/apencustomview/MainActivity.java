@@ -1,24 +1,34 @@
 package com.example.apen.apencustomview;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.apen.apencustomview.view.CurveView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView iv;
+    private CurveView mCurveView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        iv = (ImageView) findViewById(R.id.iv);
+        mCurveView = (CurveView) findViewById(R.id.curveView);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.circle_shape);
+        List<Float> yline=new ArrayList<Float>();
+        yline.add(4.22f);
+        yline.add(4.26f);
+        yline.add(4.24f);
+        yline.add(4.25f);
+        yline.add(4.22f);
+        yline.add(4.23f);
+        yline.add(4.27f);
+        mCurveView.setDataY(yline);
 
-        iv.setImageResource(R.drawable.circle_shape);
     }
 }

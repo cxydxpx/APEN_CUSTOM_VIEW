@@ -3,7 +3,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#fefefe"
+                android:background="#fefe"
                 tools:context="com.example.apen.apencustomview.MainActivity">
 
     <com.example.apen.apencustomview.view.CurveView
@@ -11,6 +11,5 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="100dp"/>
-
 
 </RelativeLayout>
